@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+    <title>Моя Визитка</title>
+</head>
+<body> 
+
+<!-- шапка -->
+    <header>
+        <div class="logo">Андрей Браун</div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+<!-- основа -->
+    <main>
+
+<!-- тизер -->
+        <div class="teaser">
+            <div class="teaser_text">
+                <h1>Привет<br>Я Андрей Браун</h1>
+                <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
+                <button><a href="#">Обо мне</a></button>
+                <button><a href="#">Мои работы</a></button>
+            </div>
+        </div>
+
+<!-- резюме -->
+        <div class="bio">
+            <h2>ОБО МНЕ</h2>
+            <img src="/src/img/avatars/фотка.png" alt="фотка">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <button><a href="#">Скачать резюме</a></button>
+        </div>
+
+<!-- Услуги -->
+        <div class="services">
+            <h2>ЧТО Я УМЕЮ</h2>
+            <div class="services_cards">
+                <div class="card">
+                    <img src="/src/img/icon services/ноут.png" alt="ноут">
+                    <h4>Веб-дизайн</h4>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis mi in tempus eleifend 
+                        pellentesque.</p>
+                </div>
+                <div class="card">
+                    <img src="/src/img/icon services/знак.png" alt="знак">
+                    <h4>Разработка</h4>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis mi in tempus eleifend 
+                        pellentesque.</p>
+                </div>
+                <div class="card">
+                    <img src="/src/img/icon services/ракета1.png" alt="ракета1">
+                    <h4>CEO-оптимизация</h4>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis mi in tempus eleifend 
+                        pellentesque.</p>
+                </div>
+                <div class="card">
+                    <img src="/src/img/icon services/граммофон.png" alt="граммофон">
+                    <h4>Маркетинг</h4>
+                    <p>Lorem ipsum dolor sit amet placerat
+                        facilisis mi in tempus eleifend 
+                        pellentesque.</p>
+                </div>
+            </div>
+        </div>
+
+<!-- Кейсы -->
+        <div class="cases">
+            <h2>КЕЙСЫ</h2>
+            <div class="cases_screen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+                <img src="/src/img/screenshots/фотка1.png" alt="скрин работы">                
+            </div>
+            <div class="cases_info">
+                <div class="cases_name">
+                    <h4>CLIENT:</h4>
+                    <a>Какая-то компания</a>
+                    <h4>WEBSITE:</h4>
+                    <p>http://www.somedomain.com</p>
+                    <button><a href="#">VISIT LIVE SITE</a></button>
+                </div>
+                <div class="cases_desc">
+                    <h4>Название проекта</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+         </div>
+
+<!-- Расчет стоимости -->
+         <div class="calculator">
+            <h2>Расчёт стоимости</h2>
+
+            <h4>Тип Сайта</h4>
+            <select name="site_type" id="type">
+                <option value="Landing Page">Лендинг</option>
+                <option value="Dusiness card">Визитка</option>
+            </select>
+
+            <h4>Дизайн</h4>
+            <select name="design" id="design">
+                <option value="classic">Классический</option>
+                <option value="minimal">Минимализм</option>
+            </select>
+
+            <h4>Адаптивность</h4>
+            <select name="adaptive" id="adaptive">
+                <option value="transferring blocks">Перенос блоков</option>
+                <option value="switching layouts">Переключение макетов</option>
+            </select>
+            <div class="line"></div>
+            <div class="deadlines">
+                <h3>Сроки</h3>
+                <p>0</p>
+            </div>
+            <div class="cost">
+                <h3>цена</h3>
+                <p>0</p>
+            </div>
+         </div>
+
+<!-- Статистика -->
+         <div class="statistics">
+             <h2>НЕМНОГО СТАТИСТИКИ</h2>
+             <div class="statistics_cards">
+                <div class="statistics_card">
+                    <img src="/src/img/icon statistics/смайл.png" alt="смайл">
+                    <h4>120</h4>
+                    <p>Довольных клиентов</p>
+                </div>
+                <div class="statistics_card">
+                    <img src="/src/img/icon statistics/скобки.png" alt="скобки">
+                    <h4>4,600</h4>
+                    <p>Часов работы</p>
+                </div>
+                <div class="statistics_card">
+                    <img src="/src/img/icon statistics/галочка.png" alt="галочка">
+                    <h4>340</h4>
+                    <p>Проектов завершено</p>
+                </div>
+                <div class="statistics_card">
+                    <img src="/src/img/icon statistics/кубок.png" alt="кубок">
+                    <h4>23</h4>
+                    <p>Наград получено</p>
+                </div>
+             </div>
+         </div>
+
+<!-- Отзывы -->
+         <div class="reviev">
+             <h2>ОТЗЫВЫ</h2>
+             <img src="/src/img/avatars/фотка2.png" alt="ава2">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+             <p><b>Михаил</b>, Ген директор ПАО “Газпром”.</p>
+         </div>
+
+<!-- Контакты -->
+         <div class="contacts">
+             <h2>МОИ КОНТАКТЫ</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+             <div class="links">
+                <div class="card_links">
+                    <img src="/src/img/icon contacts/гео.png" alt="точка">
+                    <a href="#">Санкт-Петербург <br>Невский проспект 11</a>
+                </div>
+                <div class="card_links">
+                    <img src="/src/img/icon contacts/конверт.png" alt="точка">
+                    <a href="mailto:info@companyname.com">info@companyname.com</a>
+                </div>
+                <div class="card_links">
+                    <img src="/src/img/icon contacts/труба.png" alt="точка">
+                    <a href="tel:+7999999-99-99">+7 999 999-99-99</a>
+                </div>
+             </div>
+         <!-- формы -->
+             <div class="forms">
+                <h3>ОСТАВЬТЕ СООБЩЕНИЕ МНЕ</h3>
+                <form action="index.html">
+                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="сообщение"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+             </div>
+         <!-- ссылки на соцсети -->
+             <div class="links_network">
+                 <a href="#"><img src="img/icon links/фб.png" alt=""></a>
+                 <a href="#"><img src="img/icon links/твитер.png" alt=""></a>
+                 <a href="#"><img src="img/icon links/мяч.png" alt=""></a>
+                 <a href="#"><img src="img/icon links/киса.png" alt=""></a>
+                 <a href="#"><img src="img/icon links/инст.png" alt=""></a>
+                 <a href="#"><img src="img/icon links/ин.png" alt=""></a>
+             </div>     
+<!-- Карта -->
+         <div class="map">
+             <img src="/src/img/map/Я здесь.png" alt="карта">
+         </div>
+    </main>
+
+<!-- подвал -->
+    <footer>
+        <p>Copyright © 2021 Андрей Браун. Design by Web</p> 
+    </footer>
+</body>
+</html>

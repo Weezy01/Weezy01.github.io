@@ -1,0 +1,404 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #243042;
+}
+
+
+/* шапка */
+header {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    color: #fff;
+    background-color: #2c384a;
+    font-weight: 500;
+    
+}
+
+.logo{
+    margin: 15px 0px 22px 389px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.menu{
+    margin-left: 430px;
+    text-transform: uppercase;
+}
+
+.menu a{
+    color: #fff;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li {
+   padding-right: 40px;
+}
+
+/* основа */
+h2 {
+    padding-top: 100px;
+    text-align: center;
+    color: #243042;
+}
+
+h2:after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    padding-top: 30px ;
+    border-bottom: 4px solid #fcac45;
+}
+
+/* тизер */
+
+.teaser {
+    height: 1000px;
+    width: 100%;
+    background: url(/src/img/phons/фон1.png);   
+}
+
+.teaser_text {
+    width: 1500px;
+    text-align: center;
+    padding: 400px 430px 990px 300px;
+}
+
+.teaser_text h1 {
+    line-height: 70px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #2c384a;
+    font-size: 66px;
+}
+
+.teaser_text h4 {
+    margin-bottom: 60px;
+    color: #79818d;
+}
+
+.teaser_text button {
+    margin-left: 30px;
+    border: 2px solid #6f707e;
+    border-radius: 10px;
+}
+
+.teaser_text button a {
+    color: #79818d;
+}
+
+/* резюме */
+
+.bio {
+    margin: 0 auto 100px;
+    padding: 100px 0 100px;
+    width: 733px ;
+    height: 715px;
+}
+
+.bio img {
+    margin: 60px 38% 22px;
+}
+
+.bio p {
+    margin-bottom: 40px;
+}
+
+.bio button{
+    margin-left: 44%;
+    border: 2px solid #6f707e;
+    border-radius: 10px;
+}
+
+.bio button a {
+    color: #6f707e;
+}
+
+/* услуги */
+
+.services {
+    width: 100%;
+    height: 520px;
+    background-image: url(/src/img/phons/фон2.png);
+} 
+
+.services_cards {
+    margin: 0 auto;
+    display: flex;
+    height: 150px ;
+    width: 1090px;
+}
+
+.card{
+    margin-top: 105px;
+    margin-left: 6%;
+    text-align: center;
+    
+}
+
+.card img {
+    margin: 0 auto;
+}
+
+.card h4 {
+    margin: 15px 0;
+    color: #cf7600;
+}
+
+.card p {
+    color: #5b6371;
+}
+
+/* кейсы */
+
+.cases {
+    color: #243042;
+    margin: 0 20% 200px;
+ 
+}
+
+.cases h2 {
+    margin-bottom: 40px;
+}
+
+.cases p{
+    text-align: center;
+    margin-bottom: 40px;   
+}
+
+.cases_name p {
+    margin: 10px 0;
+}
+
+.cases_name button{
+    height: 40px;
+    width: 225px;
+    background: #63b5ae;
+    border: 2px solid #63b5ae;
+    border-radius: 10px;
+}
+.cases_name button a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.cases_info {
+    display: flex;
+    margin-top: 40px;
+}
+
+.cases_info h4 {
+    font-size: 19px;
+}
+
+.cases_desc {
+    padding-left: 85px;
+    
+}
+
+.cases_desc p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* расчёт стоимости */
+
+.calculator {
+    margin: 200px 25% 150px;
+    width: 895px;
+}
+
+.calculator h2, h4{
+    color: #000;
+}
+
+.calculator h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.calculator h2:after {
+    display: none;
+}
+
+.calculator select {
+    width: 895px;
+    height: 57px;
+    margin: 25px  0 49px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+}
+
+
+
+.deadlines, .cost {
+    display: flex;  
+}
+
+.deadlines p, .cost p{
+    margin-left: auto;
+}
+
+.line {
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin: 0 0 25px;
+    background: #b1b1b1;
+    display: block;
+}
+
+/* статистика */
+
+.statistics {
+    background-image: url(/src/img/phons/фон3.png);
+    height: 498px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.statistics h2 {
+    margin-bottom: 90px;
+}
+
+.statistics_cards {
+    display: flex;
+    margin: 0 320px;
+}
+
+.statistics_cards img {
+    margin: 0 auto;
+}
+
+.statistics_cards h4 {
+    font-size: 30px;   
+    color: #323e4f;
+    margin: 29px 0;
+    font-weight: 900;
+}
+
+.statistics_cards p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.statistics_card {
+    margin-left: 155px;
+    text-align: center;
+    color: #323e4f;
+}
+
+/* контакты */
+
+.reviev {
+    margin: 0 615px ;
+    text-align: center;
+}
+
+.reviev h2 {
+    font-size: 30px;
+}
+
+.reviev img {
+    margin: 60px auto 36px;
+    
+}
+
+.reviev p {
+    margin: 35px 0 150px;
+
+}
+
+/* контакты */
+
+.contacts {
+    background-image: url(/src/img/phons/Фон4.png);
+    color: #fff;
+    text-align: center;
+}
+
+.contacts h2 {
+    color: #fff;
+}
+
+.contacts p {
+    margin-top: 30px;
+}
+
+.links {
+    display: flex;
+    margin: 47px 500px 40px;
+}
+
+.links a{
+    color: #fff;
+}
+
+.card_links {
+    margin-left: 100px;
+}
+
+.card_links img {
+    margin: 0 auto;
+}
+
+/* формы */
+
+.forms h3 {
+    margin-bottom: 45px;
+    font-size: 500;
+}
+
+.forms input {
+    width: 350px;
+    margin: 0 15px 15px;
+}
+
+.forms textarea {
+    display: block;
+    margin: 0 auto;
+    width: 735px;
+    height: 94px;
+}
+
+.forms button {
+    margin-top: 30px;
+    height: 45px;
+    width: 125px;
+    background: none;
+    font-weight: 700;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+
+/* соцсети */
+
+.links_network {
+    display: flex;
+    margin: 70px 690px;
+}
+
+.links_network img {
+    margin-left: 55px;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #354051;
+    padding: 45px 0;
+}
+
+footer p {
+
+    text-align: center;
+    color: #fff;
+}
