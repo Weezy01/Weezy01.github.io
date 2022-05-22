@@ -16,33 +16,36 @@
 
 <!-- шапка -->
     <header> 
-            <nav class="navbar-expand-lg fixed-top" style="background: #2a3e51;">
+            <nav id="navbar-example2" class="navbar-expand-lg fixed-top" style="background: #2a3e51;">
                 <div class="container">
-                    <div class="navbar">
-                        <div class="navbar-brand text-white col-md-5">Андрей браун</div>
+                    <div id="mylock" class="navbar lock">
+                        <div id="logoID" class="navbar-brand text-white col-md-5">Андрей браун</div>
                         <div class="navbar col-md-6">
                             <ul class="navbar-nav ">
                                 <li class="nav-item col-3">
-                                    <a class="nav-link text-white" href="#">ОБО МНЕ</a>
+                                    <a class="nav-link text-white" href="#meID">ОБО МНЕ</a>
                                 </li>
                                 <li class="nav-item col-3">
-                                    <a class="nav-link text-white" href="#">ПРАЙС</a>
+                                    <a class="nav-link text-white" href="#services">УСЛУГИ</a>
                                 </li>
                                 <li class="nav-item col-3">
-                                    <a class="nav-link text-white" href="#">УСЛУГИ</a>
+                                    <a class="nav-link text-white" href="#cases">КЕЙСЫ</a>
                                 </li>
                                 <li class="nav-item col-3">
-                                    <a class="nav-link text-white" href="#">КЕЙСЫ</a>
+                                    <a class="nav-link text-white" href="#price">ПРАЙС</a>
                                 </li>
                                 <li class="nav-item col-3">
-                                    <a class="nav-link text-white" href="#">ОТЗЫВЫ</a>
+                                    <a class="nav-link text-white" href="#reviev">ОТЗЫВЫ</a>
                                 </li>
                                 <li class="nav-item col-3">
-                                    <a class="nav-link text-white" href="#">КОНТАКТЫ</a>
+                                    <a class="nav-link text-white" href="#contact">КОНТАКТЫ</a>
                                 </li>
                             </ul>                            
                         </div>
-                    </div>                      
+                    </div>  
+                    <button type="button" class="bg-transparent position-absolute mt-1 border-0  top-0 end-0">
+                        <img id="men" class="menu-IC"  src="/src/img/icon menu/menu_circular_button_burger_icon_124214.svg" width="40" height="40" alt=""></svg>
+                    </button>                  
                 </div>                
             </nav>  
     </header>
@@ -63,7 +66,7 @@
             </div>
         </section>
 <!-- резюме -->
-        <section>
+        <section id="meID" style="opacity: 0 ;">
             <div class="container top-50 start-50 text-center">
                 <h2 class="text-center m-5 p-5">ОБО МНЕ</h2>
                 <img src="/src/img/avatars/фотка.png" alt="" class="rounded mx-auto d-block">
@@ -75,7 +78,7 @@
             </div>
         </section>
 <!-- что я умею -->
-        <section>
+        <section id="services" style="opacity: 0 ;">
             <div class="container-fluid" style="background-image: url(/src/img/phons/фон2.png);">
                 <div class="container">
                     <h2 class="text-center m-5 p-5">ЧТО Я УМЕЮ</h2>
@@ -113,13 +116,33 @@
             </div>
         </section>
 <!-- КЕЙСЫ -->
-        <section>
-            <div class="container my-5">
-                <div class="">
+        <section id="cases" style="opacity: 0 ;">
+            <div class="container my-5" style="overflow:hidden">
+                <div>
                     <h2 class="text-center m-5">КЕЙСЫ</h2>
-                    <p class="text-center m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
-                    <img src="/src/img/screenshots/фотка1.png" alt="" class="rounded mx-auto d-block">                    
+                    <p class="text-center m-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>                  
                 </div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/src/img/screenshots/фотка1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/src/img/screenshots/тест карусели.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/src/img/screenshots/тест карусели 2.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Следующий</span>
+                    </button>
+                  </div>
                 <div class="row mx-4">
                     <div class="col-2 mx-3">
                         <h4>CLIENT:</h4>
@@ -138,70 +161,73 @@
             </div>
         </section>
 <!-- Расчет стоимости -->
-        <section>
+        <section id="price" style="opacity: 0 ;">
             <div class="container shadow p-3 mb-5 my-5">
                 <h3 class="text-center text-black fw-bolder m-5">Расчет стоимости</h3>
                 <div class="m-5">
                     <h4 class="fw-bolder">ТИП САЙТА</h4>
                     <select name="list" id="SiteID" class="py-3 col-12 text-secondary fw-bolder px-3 border-secondary border-0 bg-light">
-                        <option value="#">выберите пункт...</option>
-                        <option value="#">лендинг</option>
-                        <option value="#">визитка</option>
+                        <option value="0">выберите пункт...</option>
+                        <option value="1000">лендинг</option>
+                        <option value="2000">визитка</option>
+                        <option value="7000">Промо-сайт</option>
                     </select>                    
                 </div>  
                 <div class="m-5">
                     <h4 class="fw-bolder">ДИЗАЙН</h4>
                     <select name="list" id="DesignID" class="py-3 col-12 text-secondary fw-bolder px-3 border-secondary border-0 bg-light">
-                        <option value="#">выберите пункт...</option>
-                        <option value="#">минимализм</option>
-                        <option value="#">классика</option>
+                        <option value="0">выберите пункт...</option>
+                        <option value="1000">минимализм</option>
+                        <option value="2000">классика</option>
+                        <option value="3000">макет</option>
                     </select>                    
                 </div>  
                 <div class="m-5">
                     <h4 class="fw-bolder">АДАПТИВНОСТЬ</h4>
                     <select name="list" id="AdaptiveID" class="py-3 col-12 text-secondary fw-bolder px-3 border-secondary border-0 bg-light">
-                        <option value="#">выберите пункт...</option>
-                        <option value="#">резиновая</option>
-                        <option value="#">смешанная</option>
+                        <option value="0">выберите пункт...</option>
+                        <option value="0">без адаптива</option>
+                        <option value="1000">резиновая</option>
+                        <option value="3000">смешанная</option>
                     </select>                    
                 </div>       
                 <div class="border-top border-2 fs-5 my-2">
                     <div class="row row-cols-2">
                         <p>Сроки</p>
-                        <div class="text-end fw-bolder fs-3" id="termID">0</div>
+                        <div class="text-end fw-bolder fs-3" ><p id="termID">0</p></div>
                     </div>
                     <div class="row row-cols-2">
                         <p>Стоимость</p>
-                        <div class="text-end fw-bolder fs-3" id="priseID">0</div>
+                        <div class="text-end fw-bolder fs-3" ><p id="priseID">0</p></div>
                     </div>
                 </div>    
                 <button class="btn btn-info mx-auto d-block rounded text-light mb-2 px-5 py-2">оставить заявку</button>       
             </div>
         </section>
 <!-- статистика -->
-        <section>
+        <section id="statID" style="opacity: 0 ;">
             <div class="container-fluid" style="background-image: url(/src/img/phons/фон3.png);">
                 <div class="container">
                     <h2 class="text-center m-5 p-5">НЕМНОГО СТАТИСТИКИ</h2>
                     <div class="row p-4">
                         <div class="col text-center">
                             <img src="/src/img/icon statistics/смайл.png" class="mx-auto m-4" alt="">
-                            <div class="fw-bold fs-2 my-3">120</div>
+                            <div  class="fw-bold fs-2 my-3"><p id="clientsID">0</p></div>
                             <p class="fs-6">СЧАСТЛИВЫХ КЛИЕНТОВ</p>
                         </div>
                         <div class="col text-center">
                             <img src="/src/img/icon statistics/скобки.png" class="mx-auto m-4" alt="">
-                            <div class="fw-bold fs-2 my-3">4,600</div>
+                            <div  class="fw-bold fs-2 my-3"><p id="hourID">0</p></div>
                             <p class="fs-6">ЧАСОВ РАБОТЫ</p>
                         </div>
                         <div class="col text-center">
                             <img src="/src/img/icon statistics/галочка.png" class="mx-auto m-4" alt="">
-                            <div class="fw-bold fs-2 my-3">340</div>
+                            <div  class="fw-bold fs-2 my-3"><p id="projectID">0</p></div>
                             <p class="fs-6">ПРОЕКТОВ ЗАВЕРШЕНО</p>
                         </div>
                         <div class="col text-center">
                             <img src="/src/img/icon statistics/кубок.png" class="mx-auto m-4" alt="">
-                            <div class="fw-bold fs-2 my-3">23</div>
+                            <div  class="fw-bold fs-2 my-3"><p id="rewardID">0</p> </div>
                             <p class="fs-6">НАГРАД ПОЛУЧЕНО</p>
                         </div>
                     </div>
@@ -209,17 +235,50 @@
             </div>            
         </section>
 <!-- отзывы -->
-        <section>
-            <div class="container top-50 start-50 text-center">
-                <h2 class="text-center m-5 p-5">ОТЗЫВЫ</h2>
-                <img src="/src/img/avatars/фотка2.png" alt="" class="rounded mx-auto d-block">
-                <p class="m-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-                <p class="m-5 w-75 mx-auto"><span class="fw-bold" >Михаил,</span> Ген директор ПАО “Газпром”.</p>
-            </div>
+
+        <section id="reviev"  style="opacity: 0 ;">
+            <h2 class="text-center m-5 p-5">ОТЗЫВЫ</h2>
+            <div id="carouselID" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container top-50 start-50 text-center">
+                            <img src="/src/img/avatars/ава тест.png" alt="" class="rounded mx-auto d-block">
+                            <p class="m-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                            <p class="m-5 w-75 mx-auto"><span class="fw-bold" >Михаил,</span> Ген директор ПАО “Газпром”.</p>
+                        </div>  
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container top-50 start-50 text-center">
+                            <img src="/src/img/avatars/ава тест 2.png" alt="" class="rounded mx-auto d-block">
+                            <p class="m-5 w-75 mx-auto"> хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 хороший отзыв 1 </p>
+                            <p class="m-5 w-75 mx-auto"><span class="fw-bold" >Михаил,</span> должность 1</p>
+                        </div>  
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container top-50 start-50 text-center">
+                            <img src="/src/img/avatars/фотка2.png" alt="" class="rounded mx-auto d-block">
+                            <p class="m-5 w-75 mx-auto">хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .хороший отзыв 2 .</p>
+                            <p class="m-5 w-75 mx-auto"><span class="fw-bold" >Генадий,</span> должность 2</p>
+                        </div>  
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselID"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselID"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div> 
+            
         </section>
+
+
+
 <!-- контакты -->
-        <section>
+        <section id="contact" style="opacity: 0 ;">
             <div class="container-fluid" style="background-image: url(/src/img/phons/Фон4.png);">
                 <h2 class="text-center m-5 p-5 text-light">ОТЗЫВЫ</h2>
                 <p class="text-light text-center my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</p>
@@ -241,17 +300,15 @@
                 <div class="text-white">
                     <form>
                         <div class="container w-50">
-                            <div class="row row-cols-md-2 my-3">
-                                <div class="col-2">
-                                    <label for="#" class="form-label"></label>
-                                    <input type="text" class="form-control" placeholder="имя">                                
-                                </div>          
-                                <div class="col-2">
-                                    <label for="#" class="form-label"></label>
-                                    <input type="text" class="form-control" placeholder="Email">                                
-                                </div>                      
-                            </div>                            
-                            <textarea name="massage" id="massageID" cols="121" rows="5" placeholder="собщение..."></textarea>
+                            <div class="row g-3 mb-2" >
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Имя" aria-label="Имя">
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                                </div>
+                              </div>                          
+                            <textarea name="massage" id="massageID" class="form-control" rows="3" placeholder="собщение..."></textarea>
                             <button class="btn border-2 border-white mx-auto d-block rounded text-white m-4 px-3">Отправить</button>    
                             <div class="row w-50 mx-auto">
                                 <div class="col"><img src="/src/img/icon links/фб.png" alt=""></div>    
@@ -275,7 +332,31 @@
     <footer class="text-center text-white p-3" style="background: #2a3e51;">
         Copyright © 2021 Андрей Браун. Design by Web
     </footer>
+
+
+
+
+
+    <div id="modal-content">
+        <p>впервые у нас на сайте? для новых клиетов у нас скидка! вот ваш купон!</p>
+        <div class=" text-center">
+            <button type="button" class="m-3 border border-2 border-primary rounded-3 btn btn-warning">купон</button>
+        </div>
+        <a id="modal-close" href="#close">Закрыть</a>
+    </div>
+    <script>
+        setTimeout(function(){ 
+            modalwin = document.getElementById('modal-content');
+            modalwin.style.display="block"; 
+            document.getElementById("modal-close").addEventListener("click", function(){
+                modalwin.style.display="none";            
+            });
+        }, 10000);
+    </script>
 <!-- скрипт -->
+    <script src="/src/js/jquery-3.6.0.min.js"></script>
     <script src="/src/js/main.js"></script>
+    <script src="/src/js/anim.js"></script>
+    <script src="/src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,20 +1,18 @@
 "use strict"
+		   
+// калькулятор
+$(function(){
+	$('#price').change(function(){
+		var type = $('#SiteID').val();
+		var design = $('#DesignID').val();
+		var adaptive = $('#AdaptiveID').val();
+		
+		var total = Number(type) + Number(design) + Number(adaptive);
+		var term = ''
 
-    let calculator = {
-        type: [0, 1000, 2000, 7000],
-        design: [0, 1000, 2000, 3000],
-        adaptive: [0, 0, 1000, 3000],
-    };
+		$('#priseID').text(total + ' руб');
 
-    let type = prompt('выберите тип сайта. 1 - визитка. 2 - лендинг. 3 - магазин');
-    let design = prompt('выберите дизайн сайта. 1 - минимализм. 2 - классика. 3 - макет');
-    let adaptive = prompt('выберите адаптив. 1 - без адаптива . 2 - резиновый. 3 - смешанный');
-
-
-    let total =  calculator.type[type] + calculator.design[design] + calculator.adaptive[adaptive]
-    let term = ''
-
-    if (total <= 3000) {
+		    if (total <= 3000) {
         term = '1 день'
     } else if (total <= 5000){
         term = '3 дня'
@@ -23,6 +21,28 @@
     } else if(total <= 14000){
         term = '10 дней'};
 
+		$('#termID').text(term)
 
 
-    alert(`цена работы: ${total}. работа будет выполнена через ${term}`);
+	})
+});
+
+
+// менюшка
+
+$('#men').on("click", function myFunction() {
+    let x = document.getElementById('mylock');
+	let y = document.getElementById('logoID');
+
+    if (y.className === 'navbar-brand text-white col-md-5') {
+        y.className = 'd-none';
+    } else {
+        y.className = 'navbar-brand text-white col-md-5';
+    }
+
+    if (x.className === 'navbar lock') {
+        x.className = 'navbar menu-CI';
+    } else {
+        x.className = 'navbar lock';
+    }
+})
